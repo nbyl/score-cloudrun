@@ -25,7 +25,7 @@ import (
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
 
-	"github.com/score-spec/score-cloudrun/internal/state"
+	"github.com/nbyl/score-cloudrun/internal/state"
 )
 
 const (

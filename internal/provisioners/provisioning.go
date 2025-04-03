@@ -20,7 +20,7 @@ import (
 
 	"github.com/score-spec/score-go/framework"
 
-	"github.com/score-spec/score-cloudrun/internal/state"
+	"github.com/nbyl/score-cloudrun/internal/state"
 )
 
 func ProvisionResources(currentState *state.State) (*state.State, error) {

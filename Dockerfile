@@ -1,7 +1,7 @@
 FROM golang:1.24.1-alpine@sha256:43c094ad24b6ac0546c62193baeb3e6e49ce14d3250845d166c77c25f64b0386 AS builder
 
 # Set the current working directory inside the container.
-WORKDIR /go/src/github.com/score-spec/score-cloudrun
+WORKDIR /go/src/github.com/nbyl/score-cloudrun
 
 # Copy just the module bits
 COPY go.mod go.sum ./
