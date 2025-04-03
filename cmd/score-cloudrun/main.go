@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/score-spec/score-cloudrun/internal/command"
+	"github.com/nbyl/score-cloudrun/internal/command"
 )
 
 func main() {

@@ -30,9 +30,9 @@ import (
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
 
-	"github.com/score-spec/score-cloudrun/internal/convert"
-	"github.com/score-spec/score-cloudrun/internal/provisioners"
-	"github.com/score-spec/score-cloudrun/internal/state"
+	"github.com/nbyl/score-cloudrun/internal/convert"
+	"github.com/nbyl/score-cloudrun/internal/provisioners"
+	"github.com/nbyl/score-cloudrun/internal/state"
 )
 
 const (

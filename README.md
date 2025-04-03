@@ -15,7 +15,7 @@ To adapt this for your target platform, you should:
 
 1. Fork the repo or use the "use as template" button in Github (this flattens the commit history)
     ![use-as-template](use-template-screenshot.png)
-2. Rename the go module by replacing all instances of `github.com/score-spec/score-cloudrun` with your own module name.
+2. Rename the go module by replacing all instances of `github.com/nbyl/score-cloudrun` with your own module name.
 3. Replace all other instances of `score-cloudrun` with your own `score-xyz` name including renaming the `cmd/score-cloudrun` directory.
 4. Run the tests with `go test -v ./...`.
 5. Change the `TODO` in [provisioning.go](./internal/provisioners/provisioning.go) to provision resources and set the resource outputs. The existing implementation resolves placeholders in the resource params but does not set any resource outputs.
