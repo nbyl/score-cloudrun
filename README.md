@@ -1,6 +1,6 @@
-# score-implementation-sample
+# score-cloudrun
 
-This score-implementation-sample is a template repo for creating a new Score implementation following the conventions laid out in [Score Compose](https://github.com/score-spec/score-compose) and [Score K8s](https://github.com/score-spec/score-k8s).
+This score-cloudrun is a template repo for creating a new Score implementation following the conventions laid out in [Score Compose](https://github.com/score-spec/score-compose) and [Score K8s](https://github.com/score-spec/score-k8s).
 
 This sample comes complete with:
 
@@ -8,15 +8,15 @@ This sample comes complete with:
     - `generate --overrides-file` and `generate --override-property` for applying Score overrides before conversion
     - `generate --image` for overriding the workload image before conversion.
     - Full placeholder support for `${metadata...}` and `${resource...}` expressions in the workload variables, files, and resource params.
-2. State directory storage in `.score-implementation-sample/`
+2. State directory storage in `.score-cloudrun/`
 3. `TODO` in place of resource provisioning and workload conversion
 
 To adapt this for your target platform, you should:
 
 1. Fork the repo or use the "use as template" button in Github (this flattens the commit history)
     ![use-as-template](use-template-screenshot.png)
-2. Rename the go module by replacing all instances of `github.com/score-spec/score-implementation-sample` with your own module name.
-3. Replace all other instances of `score-implementation-sample` with your own `score-xyz` name including renaming the `cmd/score-implementation-sample` directory.
+2. Rename the go module by replacing all instances of `github.com/score-spec/score-cloudrun` with your own module name.
+3. Replace all other instances of `score-cloudrun` with your own `score-xyz` name including renaming the `cmd/score-cloudrun` directory.
 4. Run the tests with `go test -v ./...`.
 5. Change the `TODO` in [provisioning.go](./internal/provisioners/provisioning.go) to provision resources and set the resource outputs. The existing implementation resolves placeholders in the resource params but does not set any resource outputs.
 6. Change the `TODO` in [convert.go](./internal/convert/convert.go) to convert workloads into the target manifest form. The existing implementation resolves placeholders in the variables and files sections but just returns the workload spec as yaml content in the manifests.

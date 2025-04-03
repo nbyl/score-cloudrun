@@ -1,4 +1,4 @@
-module github.com/score-spec/score-implementation-sample
+module github.com/nbyl/score-cloudrun
 
 go 1.24.1
 

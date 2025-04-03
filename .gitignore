@@ -1,4 +1,4 @@
-.score-implementation-sample/
+.score-cloudrun/
 score.yaml
 .idea/
 manifests.yaml
