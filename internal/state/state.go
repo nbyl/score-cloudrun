@@ -26,7 +26,7 @@ import (
 )
 
 const (
-	DefaultRelativeStateDirectory = ".score-implementation-sample"
+	DefaultRelativeStateDirectory = ".score-cloudrun"
 	FileName                      = "state.yaml"
 )
 
